@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomeToMyWorld</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="menu" id="">
+    <u id="menu-bar">
+      <li>Home</li>
+      <li>Contact</li>
+      <li>About</li>
+      <li>Blog</li>
+    </ul>
+</div>
+
+<div class="bg">
+    <button id="btn-hide">Hide Login</button>
+    <button id="btn-show">Show</button>
+    <div class="login">
+        <h2>Login</h2>
+    <div class="input-box">
+        <br><br>
+        <input type="text" name="username" id="" placeholder="username">
+        <br>
+        <br>
+        <input type="password" name="password" id="" placeholder="password">
+        <br>
+        <br>
+        <button type="submit" id="btn-submit">submit</button>
+        <p>Forget password</p>
+    </div>
+    </div>
+    
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#btn-hide").click(function(){
+        $(".login").hide();
+    });
+});
+
+$(document).ready(function(){
+        $("#btn-show").click(function(){
+            $(".login").show();
+        });
+    });
+
+</script>
+
+
+
+</body>
+</html>
+
+
